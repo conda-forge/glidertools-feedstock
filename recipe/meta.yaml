@@ -16,19 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - pytest-runner
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.8
     - skyfield
     - numexpr
     - netcdf4 ==1.5.4
     - scikit-learn >=0.22
     - seawater >=3.3
     - tqdm >=4
-    - xarray >=0.16.0
+    - xarray >=2022.10.0
     - matplotlib-base
 
 test:
@@ -43,7 +43,7 @@ about:
   summary: 'A toolkit for processing Seaglider base station NetCDF files: despiking, smoothing, outlier detection, backscatter, fluorescence quenching, calibration, gridding, interpolation.'
 
   description: |
-    Glider tools is a Python 3.7 package designed to process data from the first level
+    Glider tools is a Python 3.8 package designed to process data from the first level
     of processing to a science ready dataset. The package is designed to easily import
     data to a standard column format (numpy.ndarray or pandas.DataFrame).
     Cleaning and smoothing functions are flexible and can be applied as required by the
