@@ -1,21 +1,17 @@
-About glidertools
-=================
+About glidertools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glidertools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/GliderToolsCommunity/GliderTools
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glidertools-feedstock/blob/main/LICENSE.txt)
-
 Summary: A toolkit for processing Seaglider base station NetCDF files: despiking, smoothing, outlier detection, backscatter, fluorescence quenching, calibration, gridding, interpolation.
 
 Development: https://github.com/GliderToolsCommunity/GliderTools
 
-Glider tools is a Python 3.7 package designed to process data from the first level
-of processing to a science ready dataset. The package is designed to easily import
-data to a standard column format (numpy.ndarray or pandas.DataFrame).
-Cleaning and smoothing functions are flexible and can be applied as required by the
-user. We provide examples and demonstrate best practices as developed by the SOCCO Group
+Glider tools is a Python 3.8+ package designed to process data from the first level of processing to a science ready dataset (delayed mode quality control). The package is designed to easily import data to a standard column format (numpy.ndarray or pandas.DataFrame). Cleaning and smoothing functions are flexible and can be applied as required by the user. We provide examples and demonstrate best practices as developed by the SOCCO Group, with early contributions from Polar Gliders at the University of Gothenburg. GliderTools includes contributions from VOTO. We aim to implement Best Practices developed by OceanGliders in the ongoing discussions.
 
 
 Current build status
@@ -152,6 +148,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@MartinMohrmann](https://github.com/MartinMohrmann/)
 * [@callumrollo](https://github.com/callumrollo/)
 * [@jbusecke](https://github.com/jbusecke/)
 
