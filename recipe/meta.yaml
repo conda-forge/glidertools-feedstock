@@ -1,5 +1,5 @@
 {% set name = "glidertools" %}
-{% set version = " 2023.7.25" %}
+{% set version = "2023.7.25" %}
 
 package:
   name: {{ name|lower }}
