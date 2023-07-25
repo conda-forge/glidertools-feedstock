@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.8
     - numexpr
-    - netcdf4 
+    - netcdf4
     - scikit-learn >=0.22
     - tqdm >=4
     - xarray >=2022.10.0
