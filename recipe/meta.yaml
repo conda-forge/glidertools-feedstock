@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 07efc6d3e54eb78534b1eaace60a67b94abee145217ff73b3123ffd80f888176
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - pytest-runner
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numexpr
     - netcdf4 
     - scikit-learn >=0.22
@@ -33,6 +33,8 @@ requirements:
     - gsw
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - glidertools
 
